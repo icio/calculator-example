@@ -1,0 +1,15 @@
+{
+  "name": "calc-example",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "./node_modules/.bin/bower install"
+  },
+  "author": "Paul Scott <paul.scotto@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bower": "^1.3.12"
+  }
+}

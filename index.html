@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Multiplying numbers">
+    <meta name="author" content="Paul Scott">
+
+    <title>Example Calculator</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Dependencies (usually loaded later) -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Our application -->
+    <link href="style.css" rel="stylesheet">
+    <script src="main.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Calculator</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Multiply</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="jumbotron">
+        <h1>Multiply <small>Add a number to itself many times.</small></h1>
+
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="col-sm-2 control-label"><var>a</var></label>
+            <div class="col-sm-10">
+              <input id="a" type="number" class="form-control" value="0" step="any" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label"><var>b</var></label>
+            <div class="col-sm-10">
+              <input id="b" type="number" class="form-control" value="0" step="any" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label"><var>a</var> &times; <var>b</var></label>
+            <div class="col-sm-10">
+              <input id="soln" type="number" class="form-control" value="0" disabled />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-primary">Calculate</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <h1 id="about">About</h1>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id ornare enim. Suspendisse laoreet condimentum turpis a lacinia. Duis eget auctor odio. Proin feugiat nulla ac felis consectetur euismod nec eget arcu. Integer elementum tincidunt congue. Duis aliquet convallis maximus. Duis vitae malesuada odio. Nulla vel nulla porttitor, maximus massa vel, condimentum justo.</p>
+      <p>Aliquam tempus auctor placerat. Vivamus nec magna non elit sagittis efficitur quis nec urna. Pellentesque quis ullamcorper mi. Ut blandit felis eget bibendum sagittis. Sed eget eros sem. Phasellus sed finibus magna, ut feugiat augue. Cras interdum id mauris sed suscipit. Nunc tincidunt erat in porta cursus. Fusce accumsan velit eu urna rhoncus, et fringilla odio tempus. Nunc in convallis metus.</p>
+      <p>Aenean ultricies turpis ut tellus tincidunt scelerisque. Nam congue, nisl eu scelerisque sodales, metus enim interdum quam, ut malesuada sem leo non ligula. Praesent eu mi pretium, tempor nisi pellentesque, sodales nisl. Suspendisse dapibus pharetra ligula, id fringilla leo venenatis eu. Ut volutpat sit amet lorem at scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus vitae aliquam ex, a ullamcorper quam.</p>
+
+    </div><!-- /.container -->
+  </body>
+</html>
